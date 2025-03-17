@@ -111,7 +111,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Email</h4>
-                  <p className="text-muted-foreground">ajudedaniel@exemplo.com</p>
+                  <p className="text-muted-foreground">wl_sousa@hotmail.com</p>
                 </div>
               </div>
               
@@ -128,26 +128,19 @@ const Contact = () => {
               <div className="mt-8">
                 <h4 className="font-medium mb-4">Redes Sociais</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-campaign-light-blue hover:bg-campaign-blue/20 transition-colors rounded-full p-3">
+                  <a href="https://www.instagram.com/pequenogigantedaniel?igsh=bnVtd3U3eDhxNDEw" className="bg-campaign-light-blue hover:bg-campaign-blue/20 transition-colors rounded-full p-3">
                     <Instagram className="h-5 w-5 text-campaign-blue" />
                   </a>
-                  <a href="#" className="bg-campaign-light-blue hover:bg-campaign-blue/20 transition-colors rounded-full p-3">
+                  {/* <a href="#" className="bg-campaign-light-blue hover:bg-campaign-blue/20 transition-colors rounded-full p-3">
                     <Facebook className="h-5 w-5 text-campaign-blue" />
                   </a>
                   <a href="#" className="bg-campaign-light-blue hover:bg-campaign-blue/20 transition-colors rounded-full p-3">
                     <Twitter className="h-5 w-5 text-campaign-blue" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
-            </div>
+            </div>       
             
-            <div className="mt-8 p-4 bg-campaign-light-teal/20 rounded-lg border border-campaign-light-teal/10">
-              <h4 className="font-medium mb-2">Nota importante</h4>
-              <p className="text-sm text-muted-foreground">
-                Todas as mensagens são respondidas em até 24 horas. Para assuntos urgentes, 
-                recomendamos o contato via telefone.
-              </p>
-            </div>
           </div>
         </div>
       </div>

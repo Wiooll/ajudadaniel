@@ -45,16 +45,16 @@ const Information = () => {
       answer: 'A Síndrome de West é uma forma rara de epilepsia infantil caracterizada por espasmos, alterações características no eletroencefalograma (EEG) e atraso no desenvolvimento neuropsicomotor. Geralmente se manifesta no primeiro ano de vida.'
     },
     {
-      question: 'O que é um botão de gastrostomia?',
-      answer: 'Um botão de gastrostomia é um dispositivo médico que fornece uma via de acesso direta ao estômago através da parede abdominal. É utilizado para administrar alimentação e medicamentos em pacientes que têm dificuldade para engolir ou se alimentar normalmente.'
+      question: 'O que é um botton de gastrostomia?',
+      answer: 'Um botton de gastrostomia é um dispositivo médico que fornece uma via de acesso direta ao estômago através da parede abdominal. É utilizado para administrar alimentação e medicamentos em pacientes que têm dificuldade para engolir ou se alimentar normalmente.'
     },
     {
       question: 'Por que o Daniel precisa deste dispositivo?',
-      answer: 'Daniel tem dificuldades para se alimentar devido às complicações da Síndrome de West. O botão de gastrostomia garantirá que ele receba a nutrição adequada e seus medicamentos de forma segura, melhorando sua qualidade de vida.'
+      answer: 'Daniel tem dificuldades para se alimentar devido às complicações da Síndrome de West. O botton de gastrostomia garantirá que ele receba a nutrição adequada e seus medicamentos de forma segura, melhorando sua qualidade de vida.'
     },
     {
       question: 'Como serão utilizados os recursos arrecadados?',
-      answer: 'O valor arrecadado será utilizado integralmente para a compra do botão de gastrostomia, incluindo o dispositivo em si e os materiais necessários para sua manutenção. Se houver excedente, será direcionado para outros tratamentos essenciais.'
+      answer: 'O valor arrecadado será utilizado integralmente para a compra do botton de gastrostomia, incluindo o dispositivo em si e os materiais necessários para sua manutenção. Se houver excedente, será direcionado para outros tratamentos essenciais.'
     },
     {
       question: 'Posso ajudar de outras formas além da doação financeira?',
@@ -130,7 +130,7 @@ const Information = () => {
               <div>
                 <div className="rounded-xl overflow-hidden shadow-md">
                   <img 
-                    src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=2787&ixlib=rb-4.0.3"
+                    src="https://epilepsiarussi.com/blog/wp-content/uploads/2015/05/west-1024x814.jpg"
                     alt="Representação da Síndrome de West" 
                     className="w-full h-auto"
                   />
@@ -168,11 +168,11 @@ const Information = () => {
                 
                 <p className="text-muted-foreground mb-4">
                   A gastrostomia é um procedimento cirúrgico que cria uma abertura direta no estômago através 
-                  da parede abdominal. Um dispositivo, como o botão de gastrostomia, é então inserido para permitir 
+                  da parede abdominal. Um dispositivo, como o botton de gastrostomia, é então inserido para permitir 
                   a alimentação diretamente no estômago.
                 </p>
                 
-                <h4 className="font-medium mt-6 mb-2">Benefícios do botão de gastrostomia:</h4>
+                <h4 className="font-medium mt-6 mb-2">Benefícios do botton de gastrostomia:</h4>
                 
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
@@ -208,7 +208,7 @@ const Information = () => {
                 </ul>
                 
                 <p className="text-muted-foreground">
-                  Para o Daniel, o botão de gastrostomia representará uma melhoria significativa na sua qualidade 
+                  Para o Daniel, o botton de gastrostomia representará uma melhoria significativa na sua qualidade 
                   de vida, garantindo que ele receba a nutrição adequada e seus medicamentos com segurança e conforto.
                 </p>
               </div>
@@ -225,7 +225,7 @@ const Information = () => {
                 <div className="mt-6 p-4 bg-campaign-light-teal/30 rounded-lg border border-campaign-light-teal/20">
                   <h4 className="font-medium mb-2">Sobre o dispositivo</h4>
                   <p className="text-sm text-muted-foreground mb-4">
-                    O botão de gastrostomia é um dispositivo pequeno e discreto que substitui a sonda tradicional. 
+                    O botton de gastrostomia é um dispositivo pequeno e discreto que substitui a sonda tradicional. 
                     Ele fica rente à pele e pode ser facilmente conectado para alimentação e medicação.
                   </p>
                   <p className="text-sm text-muted-foreground">

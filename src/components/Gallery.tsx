@@ -16,14 +16,14 @@ const mediaItems: MediaItem[] = [
   {
     id: 1,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1567379927031-bb0b1fa0bf90?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3',
+    src: 'https://photos.fife.usercontent.google.com/pw/AP1GczPxmZ3J0fqDtRoSbbguiNPI5mpcNy1xtPV6aETRhql3lUkS_MPBoxzYlw=w485-h645-s-no-gm?authuser=0',
     title: 'Daniel com a família',
     description: 'Um dia especial em família celebrando pequenas conquistas.'
   },
   {
     id: 2,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3',
+    src: '',
     title: 'Momentos de terapia',
     description: 'Daniel durante uma de suas sessões de fisioterapia.'
   },
@@ -45,7 +45,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 5,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1511933617088-859b414f00ae?auto=format&fit=crop&q=80&w=2948&ixlib=rb-4.0.3',
+    src: '',
     title: 'No hospital',
     description: 'Durante uma de suas consultas médicas regulares.'
   },
@@ -143,7 +143,7 @@ const Gallery = () => {
                       >
                         <div className="aspect-[4/3] relative overflow-hidden">
                           <img 
-                            src={item.type === 'image' ? item.src : item.thumbnail} 
+                            src={item.type === 'image' ? item.src :  item.thumbnail} 
                             alt={item.title}
                             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                           />

@@ -76,13 +76,13 @@ const Footer = () => {
             <h4 className="font-medium text-lg mb-4">Contato</h4>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                Email: ajudedaniel@exemplo.com
+                Email: wl_sousa@hotmail.com
               </li>
               <li className="text-sm text-muted-foreground">
-                Telefone: (11) 99999-9999
+                Telefone: (21) 98434-1881
               </li>
               <li className="text-sm text-muted-foreground">
-                São Paulo, SP - Brasil
+                Rio de Janeiro, RJ - Brasil
               </li>
             </ul>
             
@@ -94,7 +94,7 @@ const Footer = () => {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              <a href="#" className="text-campaign-blue hover:text-campaign-dark-blue transition-colors">
+              {/* <a href="#" className="text-campaign-blue hover:text-campaign-dark-blue transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
@@ -103,14 +103,14 @@ const Footer = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 4c0 8-10 13-14 8-2 2-5 5-8 5 0-3 3-6 5-8-5-4 0-14 8-14a7 7 0 0 1 7 7c0 .4-.1.8-.2 1.2a10 10 0 0 1 2.2.8l1 1-.6 1.2c-.2.4-.6.8-1 1a10 10 0 0 1-3.4.8 7 7 0 0 1-7 7c-3 0-5.2-2-7-4 8 0 14-10 14-14 0 0-2 1-2 4"></path>
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
         
         <div className="border-t border-campaign-light-blue/20 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Campanha Ajude Daniel. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Site Ajude Daniel. Todos os direitos reservados - Desenvolvido por <a href="https://github.com/Wiooll" target="_blank" rel="noopener noreferrer" className="text-campaign-blue hover:text-campaign-dark-blue transition-colors">Willian Sousa</a>.
           </p>
           <button onClick={scrollToTop} className="flex items-center text-sm text-campaign-blue hover:text-campaign-dark-blue transition-colors">
             Voltar ao topo

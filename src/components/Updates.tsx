@@ -16,23 +16,23 @@ const updatePosts: UpdatePost[] = [
   {
     id: 1,
     title: 'Iniciamos oficialmente nossa campanha',
-    date: '15 de Outubro, 2023',
-    excerpt: 'Hoje damos início à nossa campanha de arrecadação para ajudar o Daniel a adquirir o botão de gastrostomia. Contamos com o apoio de todos!',
+    date: '17 de Março, 2025',
+    excerpt: 'Hoje damos início à nossa campanha de arrecadação para ajudar o Daniel a adquirir o botton de gastrostomia. Contamos com o apoio de todos!',
     imageUrl: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=2787&ixlib=rb-4.0.3'
   },
   {
     id: 2,
-    title: 'Primeiro marco alcançado: R$ 500',
-    date: '22 de Outubro, 2023',
-    excerpt: 'Graças à generosidade de muitos, já alcançamos o primeiro marco da nossa campanha. Estamos a caminho de realizar esse sonho!',
-    imageUrl: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3'
+    title: '',
+    date: ' - 2025',
+    excerpt: '',
+    imageUrl: 'https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png'
   },
   {
     id: 3,
-    title: 'Daniel vai passar por nova avaliação médica',
-    date: '30 de Outubro, 2023',
-    excerpt: 'Esta semana, Daniel terá uma consulta importante para avaliar seu progresso e planejar o procedimento de gastrostomia.',
-    imageUrl: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3'
+    title: '',
+    date: '- 2025',
+    excerpt: '',
+    imageUrl: 'https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png'
   }
 ];
 

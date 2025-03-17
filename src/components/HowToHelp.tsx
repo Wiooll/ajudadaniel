@@ -19,7 +19,7 @@ const HowToHelp = () => {
       navigator.share({
         title: 'Ajude o Daniel',
         text: 'Contribua para a campanha de arrecadação para o Daniel, uma criança com Síndrome de West que precisa de um botão de gastrostomia.',
-        url: window.location.href,
+        url: window.location.href, 
       });
     } else {
       toast.info('Compartilhamento não suportado pelo seu navegador');
@@ -82,7 +82,7 @@ const HowToHelp = () => {
                   Faça uma transferência via PIX para a chave abaixo:
                 </p>
                 <div className="flex items-center justify-between bg-campaign-gray p-3 rounded">
-                  <code className="text-campaign-dark-blue font-mono">daniel.morais@email.com</code>
+                  <code className="text-campaign-dark-blue font-mono">21 983164018</code>
                   <Button 
                     variant="ghost" 
                     size="sm" 
@@ -96,9 +96,12 @@ const HowToHelp = () => {
                     )}
                   </Button>
                 </div>
+                <p className="text-muted-foreground mt-4 text-sm">
+                  <span className="font-medium">Dados:</span> Joycilene Morais da Rocha Silva
+                </p>
               </div>
               
-              <div className="bg-white rounded-lg p-4 border border-campaign-light-blue">
+              {/* <div className="bg-white rounded-lg p-4 border border-campaign-light-blue">
                 <h4 className="font-medium mb-2 flex items-center">
                   <RefreshCw className="h-5 w-5 mr-2 text-campaign-blue" />
                   Transferência Bancária
@@ -107,10 +110,10 @@ const HowToHelp = () => {
                   <p className="text-muted-foreground">Banco: Exemplo</p>
                   <p className="text-muted-foreground">Agência: 0001</p>
                   <p className="text-muted-foreground">Conta: 12345-6</p>
-                  <p className="text-muted-foreground">Nome: Maria Morais (mãe do Daniel)</p>
+                  <p className="text-muted-foreground">Nome: Joycilene Morais (Mãe do Daniel)</p>
                   <p className="text-muted-foreground">CPF: 123.456.789-00</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           
@@ -127,14 +130,14 @@ const HowToHelp = () => {
                   <p className="text-muted-foreground text-sm mb-3">
                     Ajude a divulgar a campanha para que mais pessoas possam conhecer a história do Daniel.
                   </p>
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     size="sm" 
                     className="border-campaign-blue text-campaign-blue hover:bg-campaign-light-blue/50"
                     onClick={shareOnSocial}
                   >
                     Compartilhar <Share2 className="ml-2 h-4 w-4" />
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
               

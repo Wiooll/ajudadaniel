@@ -6,7 +6,7 @@ const Hero = () => {
   const progressRef = useRef<HTMLDivElement>(null);
 
   // Campaign progress stats (65% for demo)
-  const currentAmount = 1300;
+  const currentAmount = 50;
   const targetAmount = 2000;
   const progressPercentage = currentAmount / targetAmount * 100;
   useEffect(() => {
@@ -34,7 +34,7 @@ const Hero = () => {
               <p className="mt-6 text-lg text-muted-foreground max-w-xl">Sua contribuição para a compra de um botton de gastrostomia fará toda a diferença no tratamento e qualidade de vida do Daniel, uma criança com Síndrome de West.</p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-campaign-blue hover:bg-campaign-dark-blue transition-all">
                 Doar Agora
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -42,7 +42,7 @@ const Hero = () => {
               <Button variant="outline" size="lg" className="border-campaign-blue text-campaign-blue hover:bg-campaign-light-blue/50">
                 Conheça a história
               </Button>
-            </div>
+            </div> */}
             
             <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-campaign-light-blue/50 max-w-md">
               <div className="flex justify-between mb-2">
@@ -63,7 +63,7 @@ const Hero = () => {
           
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
             <div className="relative rounded-2xl overflow-hidden aspect-square md:aspect-[4/5] shadow-xl">
-              <img src="https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?auto=format&fit=crop&q=80&w=2942&ixlib=rb-4.0.3" alt="Daniel sorrindo" className="object-cover w-full h-full" />
+              <img src="src\img\daniel-sorrindo.jpg" alt="Daniel sorrindo" className="object-cover w-full h-full" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <p className="font-display text-xl">Daniel, 3 anos</p>
@@ -75,7 +75,7 @@ const Hero = () => {
               <p className="text-sm text-campaign-dark-gray">
                 "Sua ajuda nos dá esperança para continuar lutando pela qualidade de vida do Daniel..."
               </p>
-              <p className="text-sm font-medium mt-2">— Família Morais Sousa</p>
+              {/* <p className="text-sm font-medium mt-2"></p> */}
             </div>
           </div>
         </div>

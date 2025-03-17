@@ -6,8 +6,8 @@ const Hero = () => {
   const progressRef = useRef<HTMLDivElement>(null);
 
   // Campaign progress stats (65% for demo)
-  const currentAmount = 50;
-  const targetAmount = 2000;
+  const currentAmount = 1650;
+  const targetAmount = 10000;
   const progressPercentage = currentAmount / targetAmount * 100;
   useEffect(() => {
     setIsVisible(true);
@@ -46,7 +46,7 @@ const Hero = () => {
             
             <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-campaign-light-blue/50 max-w-md">
               <div className="flex justify-between mb-2">
-                <span className="font-medium">Meta: R$ 2.000</span>
+                <span className="font-medium">Meta: R$ 10.000</span>
                 <span className="font-semibold text-campaign-dark-blue">R$ {currentAmount}</span>
               </div>
               

@@ -167,9 +167,9 @@ const Information = () => {
                 </h3>
                 
                 <p className="text-muted-foreground mb-4">
-                  A gastrostomia é um procedimento cirúrgico que cria uma abertura direta no estômago através 
-                  da parede abdominal. Um dispositivo, como o botton de gastrostomia, é então inserido para permitir 
-                  a alimentação diretamente no estômago.
+                  A gastrostomia é um procedimento cirúrgico que cria uma abertura direta no estômago
+                  através da parede abdominal. Um dispositivo, como o botton de gastrostomia, é então
+                  inserido para permitir a alimentação diretamente no estômago.
                 </p>
                 
                 <h4 className="font-medium mt-6 mb-2">Benefícios do botton de gastrostomia:</h4>
@@ -196,7 +196,7 @@ const Information = () => {
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">
-                      Proporciona maior conforto e praticidade em comparação a sondas nasogástricas
+                      Proporciona maior confort e praticidade em comparação a sondas nasogástricas
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -208,16 +208,17 @@ const Information = () => {
                 </ul>
                 
                 <p className="text-muted-foreground">
-                  Para o Daniel, o botton de gastrostomia representará uma melhoria significativa na sua qualidade 
-                  de vida, garantindo que ele receba a nutrição adequada e seus medicamentos com segurança e conforto.
+                  Para o Daniel, o botton de gastrostomia representará uma melhoria significativa na sua
+                  qualidade de vida, garantindo que ele receba a nutrição adequada e seus medicamentos com
+                  segurança e confort.
                 </p>
               </div>
               
               <div>
                 <div className="rounded-xl overflow-hidden shadow-md">
-                  <img 
+                  <img
                     src="https://images.unsplash.com/photo-1618498082410-b4aa22193b38?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3"
-                    alt="Representação de procedimento médico" 
+                    alt="Representação de procedimento médico"
                     className="w-full h-auto"
                   />
                 </div>
@@ -225,13 +226,14 @@ const Information = () => {
                 <div className="mt-6 p-4 bg-campaign-light-teal/30 rounded-lg border border-campaign-light-teal/20">
                   <h4 className="font-medium mb-2">Sobre o dispositivo</h4>
                   <p className="text-sm text-muted-foreground mb-4">
-                    O botton de gastrostomia é um dispositivo pequeno e discreto que substitui a sonda tradicional. 
-                    Ele fica rente à pele e pode ser facilmente conectado para alimentação e medicação.
+                    O botton de gastrostomia é um dispositivo pequeno e discreto que substitui a sonda
+                    tradicional. Ele fica rente à pele e pode ser facilmente conectado para alimentação e
+                    medicação.
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Este tipo de dispositivo precisa ser substituído periodicamente (geralmente a cada 3-6 meses), 
-                    o que representa um custo contínuo para as famílias. O valor arrecadado nesta campanha permitirá 
-                    a aquisição do dispositivo inicial e seus primeiros suprimentos.
+                    Este tipo de dispositivo precisa ser substituído periodicamente (geralmente a cada 3-6
+                    meses), o que representa um custo contínuo para as famílias. O valor arrecadado nesta
+                    campanha permitirá a aquisição do dispositivo inicial e seus primeiros suprimentos.
                   </p>
                 </div>
               </div>

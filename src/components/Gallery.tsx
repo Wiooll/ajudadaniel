@@ -16,9 +16,9 @@ const mediaItems: MediaItem[] = [
   {
     id: 1,
     type: 'image',
-    src: 'https://photos.fife.usercontent.google.com/pw/AP1GczPxmZ3J0fqDtRoSbbguiNPI5mpcNy1xtPV6aETRhql3lUkS_MPBoxzYlw=w485-h645-s-no-gm?authuser=0',
+    src: 'https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/piscina.jpg',
     title: 'Daniel com a família',
-    description: 'Um dia especial em família celebrando pequenas conquistas.'
+    description: 'Um dia especial em família.'
   },
   {
     id: 2,

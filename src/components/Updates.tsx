@@ -18,7 +18,7 @@ const updatePosts: UpdatePost[] = [
     title: 'Iniciamos oficialmente nossa campanha',
     date: '17 de Março, 2025',
     excerpt: 'Hoje damos início à nossa campanha de arrecadação para ajudar o Daniel a adquirir o botton de gastrostomia. Contamos com o apoio de todos!',
-    imageUrl: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=2787&ixlib=rb-4.0.3'
+    imageUrl: 'https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/campanha.jpg'
   },
   {
     id: 2,

@@ -31,7 +31,7 @@ const Hero = () => {
                 Ajude o Daniel a 
                 <span className="block text-campaign-blue"> conquistar uma vida melhor</span>
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl">Sua contribuição para a compra de um botton de gastrostomia fará toda a diferença no tratamento e qualidade de vida do Daniel, uma criança com Síndrome de West.</p>
+              <p className="mt-6 text-lg text-muted-foreground max-w-xl">Sua contribuição fará toda a diferença no tratamento e qualidade de vida do Daniel.</p>
             </div>
             
             {/* <div className="flex flex-col sm:flex-row gap-4">

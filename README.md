@@ -10,7 +10,7 @@ Este é um projeto criado com [Lovable](https://lovable.dev/) e utiliza as segui
 
 ## Sobre o projeto
 
-Este projeto é uma campanha de arrecadação para ajudar o Daniel, uma criança com Síndrome de West, a adquirir um botão de gastrostomia.
+Este projeto é uma campanha de arrecadação para ajudar o meu filho Daniel, uma criança atípica com Síndrome de West.
 
 ## Licença
 

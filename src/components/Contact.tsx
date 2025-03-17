@@ -1,10 +1,9 @@
-
 import { useRef, useEffect, useState } from 'react';
 import { Mail, Phone, Send, Instagram, Facebook, Twitter } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);

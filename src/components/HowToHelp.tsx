@@ -1,8 +1,7 @@
-
-import { Copy, Share2, CreditCard, BadgeCheck, RefreshCw } from 'lucide-react';
+import { Copy, Share2, CreditCard, BadgeCheck, RefreshCw, Heart, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { useRef, useEffect, useState } from 'react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const HowToHelp = () => {
   const sectionRef = useRef<HTMLElement>(null);

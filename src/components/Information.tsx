@@ -1,6 +1,6 @@
 
 import { useState, useRef, useEffect } from 'react';
-import { Brain, Stethoscope, CheckCircle, HelpCircle } from 'lucide-react';
+import { Brain, Stethoscope, CheckCircle, HelpCircle, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 

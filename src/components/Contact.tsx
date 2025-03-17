@@ -4,7 +4,6 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { toast } from 'sonner';
-
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({
@@ -12,48 +11,50 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const {
+      name,
+      value
+    } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
-  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, you would send this data to a server
     console.log('Form submitted:', formData);
     toast.success('Mensagem enviada com sucesso!');
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
-  
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
     const section = sectionRef.current;
     if (section) {
       const elements = section.querySelectorAll('.reveal-animation > *');
-      elements.forEach((el) => observer.observe(el));
+      elements.forEach(el => observer.observe(el));
     }
-    
     return () => {
       if (section) {
         const elements = section.querySelectorAll('.reveal-animation > *');
-        elements.forEach((el) => observer.unobserve(el));
+        elements.forEach(el => observer.unobserve(el));
       }
     };
   }, []);
-  
-  return (
-    <section ref={sectionRef} id="contato" className="py-20 bg-white">
+  return <section ref={sectionRef} id="contato" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16 reveal-animation">
           <p className="text-sm font-medium px-3 py-1 rounded-full bg-campaign-light-teal text-campaign-teal inline-block mb-4">
@@ -76,47 +77,21 @@ const Contact = () => {
                 <label htmlFor="name" className="block text-sm font-medium mb-1">
                   Nome
                 </label>
-                <Input 
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Seu nome"
-                  required
-                  className="w-full"
-                />
+                <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Seu nome" required className="w-full" />
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-1">
                   Email
                 </label>
-                <Input 
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="seu.email@exemplo.com"
-                  required
-                  className="w-full"
-                />
+                <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="seu.email@exemplo.com" required className="w-full" />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-1">
                   Mensagem
                 </label>
-                <Textarea 
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Sua mensagem"
-                  required
-                  rows={5}
-                  className="w-full"
-                />
+                <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Sua mensagem" required rows={5} className="w-full" />
               </div>
               
               <Button type="submit" className="w-full bg-campaign-blue hover:bg-campaign-dark-blue">
@@ -146,7 +121,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Telefone</h4>
-                  <p className="text-muted-foreground">(11) 99999-9999</p>
+                  <p className="text-muted-foreground">(21) 98434-1881</p>
                 </div>
               </div>
               
@@ -176,8 +151,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

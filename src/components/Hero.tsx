@@ -1,27 +1,21 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { useEffect, useRef, useState } from 'react';
-
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const progressRef = useRef<HTMLDivElement>(null);
-  
+
   // Campaign progress stats (65% for demo)
   const currentAmount = 1300;
   const targetAmount = 2000;
-  const progressPercentage = (currentAmount / targetAmount) * 100;
-  
+  const progressPercentage = currentAmount / targetAmount * 100;
   useEffect(() => {
     setIsVisible(true);
-    
     if (progressRef.current) {
       progressRef.current.style.setProperty('--progress-percentage', `${progressPercentage}%`);
     }
   }, [progressPercentage]);
-  
-  return (
-    <section className="min-h-screen pt-20 flex items-center relative overflow-hidden">
+  return <section className="min-h-screen pt-20 flex items-center relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-campaign-light-blue/40 to-white/0"></div>
       </div>
@@ -37,9 +31,7 @@ const Hero = () => {
                 Ajude o Daniel a 
                 <span className="block text-campaign-blue"> conquistar uma vida melhor</span>
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-                Sua contribuição para a compra de um botão de gastrostomia fará toda a diferença no tratamento e qualidade de vida do Daniel, uma criança com Síndrome de West.
-              </p>
+              <p className="mt-6 text-lg text-muted-foreground max-w-xl">Sua contribuição para a compra de um botton de gastrostomia fará toda a diferença no tratamento e qualidade de vida do Daniel, uma criança com Síndrome de West.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -71,14 +63,10 @@ const Hero = () => {
           
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
             <div className="relative rounded-2xl overflow-hidden aspect-square md:aspect-[4/5] shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?auto=format&fit=crop&q=80&w=2942&ixlib=rb-4.0.3"
-                alt="Daniel sorrindo" 
-                className="object-cover w-full h-full"
-              />
+              <img src="https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?auto=format&fit=crop&q=80&w=2942&ixlib=rb-4.0.3" alt="Daniel sorrindo" className="object-cover w-full h-full" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <p className="font-display text-xl">Daniel, 6 anos</p>
+                <p className="font-display text-xl">Daniel, 3 anos</p>
                 <p className="text-white/80">"Cada sorriso é uma vitória"</p>
               </div>
             </div>
@@ -87,13 +75,11 @@ const Hero = () => {
               <p className="text-sm text-campaign-dark-gray">
                 "Sua ajuda nos dá esperança para continuar lutando pela qualidade de vida do Daniel..."
               </p>
-              <p className="text-sm font-medium mt-2">— Família Morais</p>
+              <p className="text-sm font-medium mt-2">— Família Morais Sousa</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

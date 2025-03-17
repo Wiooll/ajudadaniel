@@ -1,14 +1,13 @@
-
 import { Heart, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-  
-  return (
-    <footer className="bg-white border-t border-campaign-light-blue/20 pt-12 pb-6">
+  return <footer className="bg-white border-t border-campaign-light-blue/20 pt-12 pb-6">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
@@ -18,10 +17,7 @@ const Footer = () => {
                 Ajude Daniel
               </span>
             </Link>
-            <p className="text-muted-foreground text-sm">
-              Campanha de arrecadação para ajudar o Daniel a adquirir um botão de gastrostomia e 
-              melhorar sua qualidade de vida.
-            </p>
+            <p className="text-muted-foreground text-sm">Campanha de arrecadação para ajudar o Daniel a adquirir um botton de gastrostomia e melhorar sua qualidade de vida.</p>
           </div>
           
           <div>
@@ -116,17 +112,12 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Campanha Ajude Daniel. Todos os direitos reservados.
           </p>
-          <button 
-            onClick={scrollToTop}
-            className="flex items-center text-sm text-campaign-blue hover:text-campaign-dark-blue transition-colors"
-          >
+          <button onClick={scrollToTop} className="flex items-center text-sm text-campaign-blue hover:text-campaign-dark-blue transition-colors">
             Voltar ao topo
             <ArrowUp className="ml-1 h-4 w-4" />
           </button>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

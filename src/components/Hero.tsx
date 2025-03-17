@@ -63,7 +63,7 @@ const Hero = () => {
           
           <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
             <div className="relative rounded-2xl overflow-hidden aspect-square md:aspect-[4/5] shadow-xl">
-              <img src="src\img\daniel-sorrindo.jpg" alt="Daniel sorrindo" className="object-cover w-full h-full" />
+              <img src="https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/daniel-sorrindo.jpg" alt="Daniel sorrindo" className="object-cover w-full h-full" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <p className="font-display text-xl">Daniel, 3 anos</p>

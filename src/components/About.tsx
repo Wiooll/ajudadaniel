@@ -48,7 +48,7 @@ const About = () => {
           
           <div className="order-1 md:order-2">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="src\img\daniel.jpg" alt="Daniel brincando" className="w-full h-auto object-cover" />
+              <img src="https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/daniel.jpg" alt="Daniel brincando" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>

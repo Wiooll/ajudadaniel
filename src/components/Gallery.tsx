@@ -52,7 +52,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 6,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1615630768059-ae3a5793e061?auto=format&fit=crop&q=80&w=2926&ixlib=rb-4.0.3',
+    src: 'https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/evolucao.jpg',
     title: 'Evolução do tratamento',
     description: 'Pequenos avanços que fazem toda a diferença.'
   }

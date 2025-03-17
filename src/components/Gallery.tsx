@@ -23,7 +23,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 2,
     type: 'image',
-    src: '',
+    src: 'https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/fisio.jpg',
     title: 'Momentos de terapia',
     description: 'Daniel durante uma de suas sessões de fisioterapia.'
   },
@@ -34,18 +34,18 @@ const mediaItems: MediaItem[] = [
     title: 'Brincando no parque',
     description: 'Apesar dos desafios, Daniel adora momentos ao ar livre.'
   },
-  {
-    id: 4,
-    type: 'video',
-    src: 'https://example.com/video.mp4',
-    thumbnail: 'https://images.unsplash.com/photo-1524717910584-66bb0fa4d162?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3',
-    title: 'Mensagem da família',
-    description: 'Um agradecimento especial a todos que têm apoiado nossa jornada.'
-  },
+  // {
+  //   id: 4,
+  //   type: 'video',
+  //   src: 'https://example.com/video.mp4',
+  //   thumbnail: 'https://images.unsplash.com/photo-1524717910584-66bb0fa4d162?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3',
+  //   title: 'Mensagem da família',
+  //   description: 'Um agradecimento especial a todos que têm apoiado nossa jornada.'
+  // },
   {
     id: 5,
     type: 'image',
-    src: '',
+    src: 'https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/hospital.jpg',
     title: 'No hospital',
     description: 'Durante uma de suas consultas médicas regulares.'
   },

@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Brain, Stethoscope, CheckCircle, HelpCircle, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 
 const Information = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -63,7 +64,7 @@ const Information = () => {
   ];
   
   return (
-    <section ref={sectionRef} id="sindrome-west" className="py-20 bg-white">
+    <section ref={sectionRef} id="informacoes" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16 reveal-animation">
           <p className="text-sm font-medium px-3 py-1 rounded-full bg-campaign-light-blue text-campaign-blue inline-block mb-4">
@@ -196,7 +197,7 @@ const Information = () => {
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">
-                      Proporciona maior confort e praticidade em comparação a sondas nasogástricas
+                      Proporciona maior conforto e praticidade em comparação a sondas nasogástricas
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -210,7 +211,7 @@ const Information = () => {
                 <p className="text-muted-foreground">
                   Para o Daniel, o botton de gastrostomia representará uma melhoria significativa na sua
                   qualidade de vida, garantindo que ele receba a nutrição adequada e seus medicamentos com
-                  segurança e confort.
+                  segurança e conforto.
                 </p>
               </div>
               
@@ -244,30 +245,22 @@ const Information = () => {
         <div className="mt-16 reveal-animation">
           <h3 className="text-2xl font-display font-medium mb-8 text-center">Perguntas Frequentes</h3>
           
-          <div className="max-w-3xl mx-auto divide-y divide-campaign-light-blue/50">
-            {faqItems.map((item, index) => (
-              <div key={index} className="py-4">
-                <button 
-                  className="w-full flex justify-between items-center text-left"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <h4 className="font-medium flex items-center">
-                    <HelpCircle className="h-5 w-5 mr-2 text-campaign-blue flex-shrink-0" />
-                    {item.question}
-                  </h4>
-                  <ChevronDown className={`h-5 w-5 text-campaign-blue transition-transform ${
-                    expandedFaq === index ? 'rotate-180' : ''
-                  }`} />
-                </button>
-                <div 
-                  className={`mt-2 pl-7 pr-4 text-muted-foreground overflow-hidden transition-all duration-300 ${
-                    expandedFaq === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <p>{item.answer}</p>
-                </div>
-              </div>
-            ))}
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqItems.map((item, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-b border-campaign-light-blue/50">
+                  <AccordionTrigger className="py-4">
+                    <div className="flex items-center">
+                      <HelpCircle className="h-5 w-5 mr-2 text-campaign-blue flex-shrink-0" />
+                      <span>{item.question}</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pl-7">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </div>

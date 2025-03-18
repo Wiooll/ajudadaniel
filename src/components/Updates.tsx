@@ -73,7 +73,7 @@ const Updates = () => {
             Atualizações
           </p>
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">
-            Acompanhe o progresso da campanha
+            Acompanhe o progresso das campanhas
           </h2>
           <p className="text-muted-foreground">
             Fique por dentro das últimas notícias e marcos importantes da nossa jornada para ajudar o Daniel.

@@ -21,12 +21,12 @@ const Navigation = () => {
 
   const navLinks = [
     { name: 'Início', path: '/' },
-    { name: 'Sobre a Campanha', path: '/sobre' },
-    { name: 'Galeria', path: '/galeria' },
-    { name: 'Como Ajudar', path: '/como-ajudar' },
-    { name: 'Síndrome de West', path: '/sindrome-west' },
-    { name: 'Atualizações', path: '/atualizacoes' },
-    { name: 'Contato', path: '/contato' },
+    { name: 'Sobre as Campanhas', path: '/#sobre' },
+    { name: 'Galeria', path: '/#galeria' },
+    { name: 'Como Ajudar', path: '/#como-ajudar' },
+    { name: 'Síndrome de West', path: '/#sindrome-west' },
+    { name: 'Atualizações', path: '/#atualizacoes' },
+    { name: 'Contato', path: '/#contato' },
   ];
 
   return (

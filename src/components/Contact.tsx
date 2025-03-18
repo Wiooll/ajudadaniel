@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div className="reveal-animation">
+          {/* <div className="reveal-animation">
             <h3 className="text-2xl font-display font-medium mb-6">Envie uma mensagem</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -99,7 +99,7 @@ const Contact = () => {
                 <Send className="ml-2 h-4 w-4" />
               </Button>
             </form>
-          </div>
+          </div> */}
           
           <div className="reveal-animation">
             <h3 className="text-2xl font-display font-medium mb-6">Informações de contato</h3>

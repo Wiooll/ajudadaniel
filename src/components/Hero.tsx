@@ -28,13 +28,13 @@ const Hero = () => {
                 Campanha de arrecadação
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-semibold leading-tight">
-                Ajude o Daniel a 
-                <span className="block text-campaign-blue"> conquistar uma vida melhor</span>
+                Ajude o Daniel
+                <span className="block text-campaign-blue"> para uma qualidade de vida melhor!</span>
               </h1>
               <p className="mt-6 text-lg text-muted-foreground max-w-xl">Sua contribuição fará toda a diferença no tratamento e qualidade de vida do Daniel.</p>
             </div>
             
-            {/* <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-campaign-blue hover:bg-campaign-dark-blue transition-all">
                 Doar Agora
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -42,7 +42,7 @@ const Hero = () => {
               <Button variant="outline" size="lg" className="border-campaign-blue text-campaign-blue hover:bg-campaign-light-blue/50">
                 Conheça a história
               </Button>
-            </div> */}
+            </div>
             
             <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-campaign-light-blue/50 max-w-md">
               <div className="flex justify-between mb-2">

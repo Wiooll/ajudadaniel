@@ -29,6 +29,28 @@ const Navigation = () => {
     { name: 'Contato', path: '/#contato' },
   ];
 
+  const scrollToSection = (sectionId: string) => {
+    setIsMenuOpen(false);
+    if (sectionId === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    
+    const targetId = sectionId.replace('/#', '');
+    const element = document.getElementById(targetId);
+    
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -39,7 +61,11 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-2"
+            onClick={() => scrollToSection('/')}
+          >
             <Heart className="h-6 w-6 text-campaign-rose" strokeWidth={2.5} />
             <span className="font-display text-xl font-semibold">
               Ajude Daniel
@@ -49,18 +75,25 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link, index) => (
-              <Link
+              <a
                 key={index}
-                to={link.path}
+                href={link.path}
                 className="text-sm font-medium text-foreground/80 hover:text-campaign-blue transition-colors link-underline"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.path);
+                }}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-campaign-blue hover:bg-campaign-dark-blue transition-colors">
+            <Button 
+              className="bg-campaign-blue hover:bg-campaign-dark-blue transition-colors"
+              onClick={() => scrollToSection('/#como-ajudar')}
+            >
               Doar Agora
             </Button>
           </div>
@@ -81,18 +114,21 @@ const Navigation = () => {
           <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link, index) => (
-                <Link
+                <a
                   key={index}
-                  to={link.path}
+                  href={link.path}
                   className="text-sm font-medium text-foreground/80 hover:text-campaign-blue transition-colors py-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(link.path);
+                  }}
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
               <Button 
                 className="bg-campaign-blue hover:bg-campaign-dark-blue transition-colors w-full mt-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => scrollToSection('/#como-ajudar')}
               >
                 Doar Agora
               </Button>

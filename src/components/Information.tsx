@@ -63,7 +63,7 @@ const Information = () => {
   ];
   
   return (
-    <section ref={sectionRef} id="informacao" className="py-20 bg-white">
+    <section ref={sectionRef} id="sindrome-west" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16 reveal-animation">
           <p className="text-sm font-medium px-3 py-1 rounded-full bg-campaign-light-blue text-campaign-blue inline-block mb-4">

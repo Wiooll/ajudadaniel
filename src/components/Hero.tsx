@@ -33,15 +33,16 @@ const Hero = () => {
               </h1>
               <p className="mt-6 text-lg text-muted-foreground max-w-xl">Sua contribuição fará toda a diferença no tratamento e qualidade de vida do Daniel.</p>
             </div>
-            
+                        
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-campaign-blue hover:bg-campaign-dark-blue transition-all">
+              {/* Direcionar para como ajudar */}
+              {/* <Button size="lg" className="bg-campaign-blue hover:bg-campaign-dark-blue transition-all">
                 Doar Agora
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button variant="outline" size="lg" className="border-campaign-blue text-campaign-blue hover:bg-campaign-light-blue/50">
                 Conheça a história
-              </Button>
+              </Button> */}
             </div>
             
             <div className="mt-8 bg-white rounded-xl p-6 shadow-sm border border-campaign-light-blue/50 max-w-md">

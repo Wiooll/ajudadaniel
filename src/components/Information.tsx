@@ -81,7 +81,7 @@ const Information = () => {
         <Tabs defaultValue="syndrome" className="w-full mb-16">
           <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="syndrome" className="text-sm md:text-base">Síndrome de West</TabsTrigger>
-            
+            {/* <TabsTrigger value="procedure" className="text-sm md:text-base">Procedimento de Gastrostomia</TabsTrigger> OCULTADO POR ERRO DE EXIBIÇÃO*/}
           </TabsList>
           
           <TabsContent value="syndrome" className="reveal-animation">

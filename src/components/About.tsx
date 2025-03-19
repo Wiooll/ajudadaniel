@@ -66,7 +66,7 @@ const About = () => {
           <div className="bg-white p-6 rounded-xl shadow-sm border border-campaign-light-blue/30 card-hover">
             <Heart className="h-10 w-10 text-campaign-rose mb-4" />
             <h4 className="text-xl font-medium mb-2">Nossa Meta</h4>
-            <p className="text-muted-foreground">Arrecadar R$ 2.000 para a compra do botton de gastrostomia que permitirá ao Daniel se alimentar adequadamente e receber seus medicamentos com mais conforto e segurança.</p>
+            <p className="text-muted-foreground">Arrecadar R$ 10.000 para a compra do botton de gastrostomia que permitirá ao Daniel se alimentar adequadamente e receber seus medicamentos com mais conforto e segurança para sua qualidade de vida e outros itens essenciais para a rotina do dia-a-dia.</p>
           </div>
           
           <div className="bg-white p-6 rounded-xl shadow-sm border border-campaign-light-blue/30 card-hover">

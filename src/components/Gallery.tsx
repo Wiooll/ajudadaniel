@@ -145,7 +145,7 @@ const Gallery = () => {
                           <img 
                             src={item.type === 'image' ? item.src :  item.thumbnail} 
                             alt={item.title}
-                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            className=""
                           />
                           {item.type === 'video' && (
                             <div className="absolute inset-0 flex items-center justify-center bg-black/30">

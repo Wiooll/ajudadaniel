@@ -22,19 +22,19 @@ const Information = () => {
     
     const section = sectionRef.current;
     if (section) {
-      const elements = section.querySelectorAll('.reveal-animation > *');
+      const elements = section.querySelectorAll<HTMLDivElement>('.reveal-animation > *');
       elements.forEach((el) => observer.observe(el));
     }
     
     return () => {
       if (section) {
-        const elements = section.querySelectorAll('.reveal-animation > *');
+        const elements = section.querySelectorAll<HTMLDivElement>('.reveal-animation > *');
         elements.forEach((el) => observer.unobserve(el));
       }
     };
   }, []);
   
-  const [expandedFaq, setExpandedFaq] = useState<number | null>(0);
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
   
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index);
@@ -81,7 +81,7 @@ const Information = () => {
         <Tabs defaultValue="syndrome" className="w-full mb-16">
           <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="syndrome" className="text-sm md:text-base">Síndrome de West</TabsTrigger>
-            <TabsTrigger value="procedure" className="text-sm md:text-base">Procedimento de Gastrostomia</TabsTrigger>
+            
           </TabsList>
           
           <TabsContent value="syndrome" className="reveal-animation">

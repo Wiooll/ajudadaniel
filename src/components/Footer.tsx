@@ -20,7 +20,7 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">Campanha de arrecadação para ajudar o Daniel a adquirir um botton de gastrostomia e melhorar sua qualidade de vida.</p>
           </div>
           
-          <div>
+          {/* <div>
             <h4 className="font-medium text-lg mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
@@ -70,7 +70,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h4 className="font-medium text-lg mb-4">Contato</h4>

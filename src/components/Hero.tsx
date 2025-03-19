@@ -6,7 +6,7 @@ const Hero = () => {
   const progressRef = useRef<HTMLDivElement>(null);
 
   // Campaign progress stats (65% for demo)
-  const currentAmount = 1650;
+  const currentAmount = 3000;
   const targetAmount = 10000;
   const progressPercentage = currentAmount / targetAmount * 100;
   useEffect(() => {

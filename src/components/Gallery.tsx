@@ -193,12 +193,12 @@ const Gallery = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <Button variant="outline" className="border-campaign-blue text-campaign-blue hover:bg-campaign-light-blue/50">
             Ver Toda a Galeria
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>
-        </div>
+        </div> */}
       </div>
       
       {selectedItem && (

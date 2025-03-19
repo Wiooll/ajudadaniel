@@ -8,7 +8,7 @@ const HowToHelp = () => {
   const [pixCopied, setPixCopied] = useState(false);
   
   const copyPix = () => {
-    navigator.clipboard.writeText('daniel.morais@email.com');
+    navigator.clipboard.writeText('21983164018');
     setPixCopied(true);
     toast.success('Chave PIX copiada!');
     setTimeout(() => setPixCopied(false), 3000);

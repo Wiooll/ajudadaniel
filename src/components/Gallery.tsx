@@ -27,13 +27,13 @@ const mediaItems: MediaItem[] = [
     title: 'Momentos de terapia',
     description: 'Daniel durante uma de suas sessões de fisioterapia.'
   },
-  {
-    id: 3,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1608681299945-8c19ed1bc404?auto=format&fit=crop&q=80&w=2952&ixlib=rb-4.0.3',
-    title: 'Brincando no parque',
-    description: 'Apesar dos desafios, Daniel adora momentos ao ar livre.'
-  },
+  // {
+  //   id: 3,
+  //   type: 'image',
+  //   src: 'https://images.unsplash.com/photo-1608681299945-8c19ed1bc404?auto=format&fit=crop&q=80&w=2952&ixlib=rb-4.0.3',
+  //   title: 'Brincando no parque',
+  //   description: 'Apesar dos desafios, Daniel adora momentos ao ar livre.'
+  // },
   // {
   //   id: 4,
   //   type: 'video',

@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { Brain, Stethoscope, CheckCircle, HelpCircle, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
@@ -79,167 +78,185 @@ const Information = () => {
         </div>
         
         <Tabs defaultValue="syndrome" className="w-full mb-16">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="syndrome" className="text-sm md:text-base" id="syndrome">Síndrome de West</TabsTrigger>
-            {/* <TabsTrigger value="procedure" className="text-sm md:text-base">Procedimento de Gastrostomia</TabsTrigger> OCULTADO POR ERRO DE EXIBIÇÃO*/}
+          <TabsList className="grid w-full grid-cols-2 mb-8 bg-campaign-light-blue/20 p-1 rounded-lg">
+            <TabsTrigger 
+              value="syndrome" 
+              className="text-sm md:text-base px-4 py-2 rounded-md data-[state=active]:bg-campaign-blue data-[state=active]:text-white transition-colors"
+            >
+              Síndrome de West
+            </TabsTrigger>
+            <TabsTrigger 
+              value="procedure" 
+              className="text-sm md:text-base px-4 py-2 rounded-md data-[state=active]:bg-campaign-blue data-[state=active]:text-white transition-colors"
+            >
+              Procedimento de Gastrostomia
+            </TabsTrigger>
           </TabsList>
           
-          <TabsContent value="syndrome" className="reveal-animation">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-display font-medium mb-4 flex items-center">
-                  <Brain className="h-6 w-6 mr-2 text-campaign-blue" />
-                  Síndrome de West
-                </h3>
-                
-                <p className="text-muted-foreground mb-4">
-                  A Síndrome de West, também conhecida como Espasmos Infantis, é uma forma grave de epilepsia 
-                  que geralmente se manifesta no primeiro ano de vida. Caracteriza-se por uma tríade de sintomas:
-                </p>
-                
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      <strong>Espasmos epilépticos:</strong> Contrações súbitas e breves dos músculos, frequentemente 
-                      em séries, afetando principalmente pescoço, tronco e braços.
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      <strong>Atraso no desenvolvimento:</strong> Regressão ou estagnação das habilidades motoras, 
-                      cognitivas e sociais.
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      <strong>Padrão EEG anormal:</strong> Conhecido como hipsarritmia, apresenta ondas cerebrais 
-                      caóticas e desorganizadas.
-                    </span>
-                  </li>
-                </ul>
-                
-                <p className="text-muted-foreground">
-                  O tratamento geralmente envolve medicamentos antiepilépticos, terapia hormonal, dieta cetogênica 
-                  e, em alguns casos, cirurgia. A intervenção precoce é crucial para melhorar o prognóstico e 
-                  minimizar os impactos no desenvolvimento.
-                </p>
-              </div>
-              
-              <div>
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img 
-                    src="https://epilepsiarussi.com/blog/wp-content/uploads/2015/05/west-1024x814.jpg"
-                    alt="Representação da Síndrome de West" 
-                    className="w-full h-auto"
-                  />
-                </div>
-                
-                <div className="mt-6 p-4 bg-campaign-light-blue/30 rounded-lg border border-campaign-light-blue/20">
-                  <h4 className="font-medium mb-2">Dados importantes</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="text-muted-foreground">
-                      • Afeta aproximadamente 1 em cada 2.000-4.000 nascidos vivos
+          <div className="mt-8">
+            <TabsContent 
+              value="syndrome" 
+              className="data-[state=active]:animate-fade-in data-[state=inactive]:hidden"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-display font-medium mb-4 flex items-center">
+                    <Brain className="h-6 w-6 mr-2 text-campaign-blue" />
+                    Síndrome de West
+                  </h3>
+                  
+                  <p className="text-muted-foreground mb-4">
+                    A Síndrome de West, também conhecida como Espasmos Infantis, é uma forma grave de epilepsia 
+                    que geralmente se manifesta no primeiro ano de vida. Caracteriza-se por uma tríade de sintomas:
+                  </p>
+                  
+                  <ul className="space-y-3 mb-6">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        <strong>Espasmos epilépticos:</strong> Contrações súbitas e breves dos músculos, frequentemente 
+                        em séries, afetando principalmente pescoço, tronco e braços.
+                      </span>
                     </li>
-                    <li className="text-muted-foreground">
-                      • É mais comum em meninos do que em meninas
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        <strong>Atraso no desenvolvimento:</strong> Regressão ou estagnação das habilidades motoras, 
+                        cognitivas e sociais.
+                      </span>
                     </li>
-                    <li className="text-muted-foreground">
-                      • Em cerca de 70% dos casos, há uma causa identificável, como lesão cerebral, 
-                      anomalias cerebrais ou distúrbios genéticos
-                    </li>
-                    <li className="text-muted-foreground">
-                      • O diagnóstico precoce e o tratamento adequado são essenciais para um melhor prognóstico
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        <strong>Padrão EEG anormal:</strong> Conhecido como hipsarritmia, apresenta ondas cerebrais 
+                        caóticas e desorganizadas.
+                      </span>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-          </TabsContent>
-          
-          <TabsContent value="procedure" className="reveal-animation">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-display font-medium mb-4 flex items-center">
-                  <Stethoscope className="h-6 w-6 mr-2 text-campaign-blue" />
-                  Procedimento de Gastrostomia
-                </h3>
-                
-                <p className="text-muted-foreground mb-4">
-                  A gastrostomia é um procedimento cirúrgico que cria uma abertura direta no estômago
-                  através da parede abdominal. Um dispositivo, como o botton de gastrostomia, é então
-                  inserido para permitir a alimentação diretamente no estômago.
-                </p>
-                
-                <h4 className="font-medium mt-6 mb-2">Benefícios do botton de gastrostomia:</h4>
-                
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      Fornece uma via segura e eficiente para alimentação e administração de medicamentos
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      Melhora o estado nutricional em pacientes com dificuldades para engolir
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      Reduz o risco de aspiração (quando alimentos ou líquidos entram nas vias aéreas)
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      Proporciona maior conforto e praticidade em comparação a sondas nasogástricas
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">
-                      É discreto e permite mobilidade e atividade normal
-                    </span>
-                  </li>
-                </ul>
-                
-                <p className="text-muted-foreground">
-                  Para o Daniel, o botton de gastrostomia representará uma melhoria significativa na sua
-                  qualidade de vida, garantindo que ele receba a nutrição adequada e seus medicamentos com
-                  segurança e conforto.
-                </p>
-              </div>
-              
-              <div>
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img
-                    src="https://images.unsplash.com/photo-1618498082410-b4aa22193b38?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3"
-                    alt="Representação de procedimento médico"
-                    className="w-full h-auto"
-                  />
-                </div>
-                
-                <div className="mt-6 p-4 bg-campaign-light-teal/30 rounded-lg border border-campaign-light-teal/20">
-                  <h4 className="font-medium mb-2">Sobre o dispositivo</h4>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    O botton de gastrostomia é um dispositivo pequeno e discreto que substitui a sonda
-                    tradicional. Ele fica rente à pele e pode ser facilmente conectado para alimentação e
-                    medicação.
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Este tipo de dispositivo precisa ser substituído periodicamente (geralmente a cada 3-6
-                    meses), o que representa um custo contínuo para as famílias. O valor arrecadado nesta
-                    campanha permitirá a aquisição do dispositivo inicial e seus primeiros suprimentos.
+                  
+                  <p className="text-muted-foreground">
+                    O tratamento geralmente envolve medicamentos antiepilépticos, terapia hormonal, dieta cetogênica 
+                    e, em alguns casos, cirurgia. A intervenção precoce é crucial para melhorar o prognóstico e 
+                    minimizar os impactos no desenvolvimento.
                   </p>
                 </div>
+                
+                <div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img 
+                      src="https://epilepsiarussi.com/blog/wp-content/uploads/2015/05/west-1024x814.jpg"
+                      alt="Representação da Síndrome de West" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-campaign-light-blue/30 rounded-lg border border-campaign-light-blue/20">
+                    <h4 className="font-medium mb-2">Dados importantes</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li className="text-muted-foreground">
+                        • Afeta aproximadamente 1 em cada 2.000-4.000 nascidos vivos
+                      </li>
+                      <li className="text-muted-foreground">
+                        • É mais comum em meninos do que em meninas
+                      </li>
+                      <li className="text-muted-foreground">
+                        • Em cerca de 70% dos casos, há uma causa identificável, como lesão cerebral, 
+                        anomalias cerebrais ou distúrbios genéticos
+                      </li>
+                      <li className="text-muted-foreground">
+                        • O diagnóstico precoce e o tratamento adequado são essenciais para um melhor prognóstico
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </TabsContent>
+            </TabsContent>
+            
+            <TabsContent 
+              value="procedure" 
+              className="data-[state=active]:animate-fade-in data-[state=inactive]:hidden"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-display font-medium mb-4 flex items-center">
+                    <Stethoscope className="h-6 w-6 mr-2 text-campaign-blue" />
+                    Procedimento de Gastrostomia
+                  </h3>
+                  
+                  <p className="text-muted-foreground mb-4">
+                    A gastrostomia é um procedimento cirúrgico que cria uma abertura direta no estômago
+                    através da parede abdominal. Um dispositivo, como o botton de gastrostomia, é então
+                    inserido para permitir a alimentação diretamente no estômago.
+                  </p>
+                  
+                  <h4 className="font-medium mt-6 mb-2">Benefícios do botton de gastrostomia:</h4>
+                  
+                  <ul className="space-y-3 mb-6">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        Fornece uma via segura e eficiente para alimentação e administração de medicamentos
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        Melhora o estado nutricional em pacientes com dificuldades para engolir
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        Reduz o risco de aspiração (quando alimentos ou líquidos entram nas vias aéreas)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        Proporciona maior conforto e praticidade em comparação a sondas nasogástricas
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 mr-2 text-campaign-teal flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">
+                        É discreto e permite mobilidade e atividade normal
+                      </span>
+                    </li>
+                  </ul>
+                  
+                  <p className="text-muted-foreground">
+                    Para o Daniel, o botton de gastrostomia representará uma melhoria significativa na sua
+                    qualidade de vida, garantindo que ele receba a nutrição adequada e seus medicamentos com
+                    segurança e conforto.
+                  </p>
+                </div>
+                
+                <div>
+                  <div className="rounded-xl overflow-hidden shadow-md">
+                    <img
+                      src="https://http2.mlstatic.com/D_NQ_NP_2X_949364-MLU75817110728_042024-F.webp"
+                      alt="botton de gastrostomia"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-campaign-light-teal/30 rounded-lg border border-campaign-light-teal/20">
+                    <h4 className="font-medium mb-2">Sobre o dispositivo</h4>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      O botton de gastrostomia é um dispositivo pequeno e discreto que substitui a sonda
+                      tradicional. Ele fica rente à pele e pode ser facilmente conectado para alimentação e
+                      medicação.
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Este tipo de dispositivo precisa ser substituído periodicamente (geralmente a cada 3-6
+                      meses), o que representa um custo contínuo para as famílias. O valor arrecadado nesta
+                      campanha permitirá a aquisição do dispositivo inicial e seus primeiros suprimentos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </TabsContent>
+          </div>
         </Tabs>
         
         <div className="mt-16 reveal-animation">

@@ -24,7 +24,7 @@ const Navigation = () => {
     { name: 'Sobre as Campanhas', path: '/#sobre' },
     { name: 'Galeria', path: '/#galeria' },
     { name: 'Como Ajudar', path: '/#como-ajudar' },
-    { name: 'Síndrome de West', path: '/#syndrome' },
+    { name: 'Síndrome de West', path: '/#informacoes' },
     { name: 'Atualizações', path: '/#atualizacoes' },
     { name: 'Contato', path: '/#contato' },
   ];

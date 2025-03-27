@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Play } from 'lucide-react';
 import { Button } from './ui/button';
@@ -138,14 +137,14 @@ const Gallery = () => {
                     .map((item) => (
                       <div 
                         key={item.id} 
-                        className="bg-white rounded-xl overflow-hidden shadow-sm border border-campaign-light-blue/20 card-hover cursor-pointer"
+                        className="bg-white rounded-xl overflow-hidden shadow-sm border border-campaign-light-blue/20 card-hover cursor-pointer h-full flex flex-col"
                         onClick={() => setSelectedItem(item)}
                       >
-                        <div className="aspect-[4/3] relative overflow-hidden">
+                        <div className="relative overflow-hidden flex-1">
                           <img 
                             src={item.type === 'image' ? item.src :  item.thumbnail} 
                             alt={item.title}
-                            className=""
+                            className="w-full h-auto max-h-[300px] object-contain"
                           />
                           {item.type === 'video' && (
                             <div className="absolute inset-0 flex items-center justify-center bg-black/30">
@@ -204,12 +203,12 @@ const Gallery = () => {
       {selectedItem && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={() => setSelectedItem(null)}>
           <div className="bg-white rounded-xl overflow-hidden max-w-4xl w-full max-h-[90vh] animate-scale-in" onClick={(e) => e.stopPropagation()}>
-            <div className="aspect-video relative">
+            <div className="aspect-auto relative max-h-[70vh]">
               {selectedItem.type === 'image' ? (
                 <img 
                   src={selectedItem.src} 
                   alt={selectedItem.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto max-h-[70vh] object-contain"
                 />
               ) : (
                 <div className="w-full h-full bg-black flex items-center justify-center">

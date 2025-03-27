@@ -22,14 +22,14 @@ const updatePosts: UpdatePost[] = [
   },
   {
     id: 2,
-    title: '',
-    date: ' - 2025',
-    excerpt: '',
-    imageUrl: 'https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png'
+    title: 'Resumo da campanha',
+    date: '27 de Março, 2025',
+    excerpt: 'Agradecemos a todos que contribuíram para a campanha. O botton de gastrostomia foi adquirido e o Daniel já está recebendo os benefícios.',
+    imageUrl: 'https://raw.githubusercontent.com/Wiooll/ajudadaniel/refs/heads/main/src/img/campanha-botton.jpg'
   },
   {
     id: 3,
-    title: '',
+    title: 'Resumo da campanha',
     date: '- 2025',
     excerpt: '',
     imageUrl: 'https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png'
